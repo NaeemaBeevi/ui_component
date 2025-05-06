@@ -7,8 +7,35 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-
+<body class="bg-indigo-700">
+    <div class="bg-indigo-900 w-96 h-96 mx-auto mt-40 ">
+        <h1 class="text-white text-center pt-6 font-semibold text-xl">Password Generator</h1>
+        <div class="bg-indigo-950 w-80 h-10 mx-auto mt-6 pt-1">
+            <div class="bg-indigo-600 h-8 w-8 ml-71 relative">
+                <img src="cpy.png">
+            </div>
+            <div class="flex items-center mt-6">
+                <label for="passwordLength" class="text-white whitespace-nowrap w-40">Password Length</label>
+                <input type="number" id="passwordLength" value="20" min="1" max="100"
+                    class=" ml-27 w-12 text-black text-right border rounded focus:outline-none focus:ring focus:ring-blue-400 bg-white" />
+            </div>
+            <div class="mt-4"><label for="Include uppercase letters" class="text-white mt-4">Include uppercase
+                    letters</label>
+                <input type="checkbox" id="uppercase letters" class="ml-27">
+            </div>
+            <div class="mt-4"> <label for="Include lowercase letters" class="text-white mt-4">Include lowercase
+                    letters</label>
+                <input type="checkbox" id="lowercase letters" class="ml-27.5">
+            </div>
+            <div class="mt-4"> <label for="Include numbers" class="text-white mt-4">Include numbers</label>
+                <input type="checkbox" id="Include numbers" class="ml-43">
+            </div>
+            <div class="mt-4"> <label for="Include symbols" class="text-white mt-4">Include symbols</label>
+                <input type="checkbox" id="Include symbols" class="ml-44">
+            </div>
+            <div class="bg-indigo-600 w-80 h-10 mx-auto mt-3 text-white text-center pt-2">Generate Password</div>
+        </div>
+    </div>
 </body>
 
 </html>
