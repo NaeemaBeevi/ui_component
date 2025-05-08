@@ -16,26 +16,28 @@
             </div>
             <div class="flex items-center mt-6">
                 <label for="passwordLength" class="text-white whitespace-nowrap w-40">Password Length</label>
-                <input type="number" id="passwordLength" value="20" min="1" max="100"
+                <input type="number" id="passwordLength" value="20" min="1" max="50"
                     class=" ml-27 w-12 text-black text-right border rounded focus:outline-none focus:ring focus:ring-blue-400 bg-white" />
             </div>
             <div class="mt-4"><label for="Include uppercase letters" class="text-white mt-4">Include uppercase
                     letters</label>
-                <input type="checkbox" id="uppercase letters" class="ml-27">
+                <input type="checkbox" id="uppercase letters" value="letters" class="ml-27">
             </div>
             <div class="mt-4"> <label for="Include lowercase letters" class="text-white mt-4">Include lowercase
                     letters</label>
-                <input type="checkbox" id="lowercase letters" class="ml-27.5">
+                <input type="checkbox" id="lowercase letters" value="letters" class="ml-27.5">
             </div>
             <div class="mt-4"> <label for="Include numbers" class="text-white mt-4">Include numbers</label>
-                <input type="checkbox" id="Include numbers" class="ml-43">
+                <input type="checkbox" id="Include numbers" value="numbers" class="ml-43">
             </div>
             <div class="mt-4"> <label for="Include symbols" class="text-white mt-4">Include symbols</label>
-                <input type="checkbox" id="Include symbols" class="ml-44">
+                <input type="checkbox" id="Include symbols" value="symbols" class="ml-44">
             </div>
-            <div class="bg-indigo-600 w-80 h-10 mx-auto mt-3 text-white text-center pt-2">Generate Password</div>
+            <button id="Generator"
+                class="cursor-pointer  bg-indigo-600 w-80 h-10 mx-auto mt-3 text-white text-center pt-2">Generate
+                Password</button>
         </div>
-    </div>
+        <script src="script.js"></script>
 </body>
 
 </html>
